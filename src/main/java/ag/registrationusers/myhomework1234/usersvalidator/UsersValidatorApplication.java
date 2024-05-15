@@ -12,10 +12,11 @@ public class UsersValidatorApplication {
 
         UserRegistration registration = context.getBean(UserRegistration.class);
 
-        registration.register("valid_login", "valid_password1", "valid_password1");
-        registration.register("invalid!login", "valid_password2", "valid_password2");
-        registration.register("valid_login2", "short", "short");
-        registration.register("valid_login3", "valid_password3", "wrong_password");
-        registration.register("valid_login", "valid_password4", "valid_password4"); // Дубликат логина
+        registration.register("login1", "P_password1", "P_password1");
+        registration.register("login2", "P_password2", "P_password2");
+        registration.register("login3", "short", "short");
+        registration.register("lo", "short_not", "short_not");
+        registration.register("login4", "P_password3", "wrong_password");
+        registration.register("login1", "P_password4", "P_password4"); // Дубликат логина
     }
 }
